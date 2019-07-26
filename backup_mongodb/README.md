@@ -3,6 +3,9 @@
 
 > Image to backup a mongoDB database.
 
+[![](https://images.microbadger.com/badges/image/ludovicm67/backup_mongo.svg)](https://microbadger.com/images/ludovicm67/backup_mongo)
+[![](https://images.microbadger.com/badges/version/ludovicm67/backup_mongo.svg)](https://microbadger.com/images/ludovicm67/backup_mongo)
+
 ## Environment variables
 
   - `BACKUP_RETENTION_DAYS`: number of days backup will be kept (default: 7)
