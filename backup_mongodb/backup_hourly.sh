@@ -20,6 +20,8 @@ mongodump \
   --uri "$MONGO_URI" \
   --gzip --archive > "/backup/hourly/dump_$DUMP_NAME.gz"
 
+echo "Backup (hourly): /backup/hourly/dump_$DUMP_NAME.gz"
+
 # remove old backups
 find /backup/hourly -type f -mtime "+$BACKUP_RETENTION_HOURS" \
   -name '*.gz' \
