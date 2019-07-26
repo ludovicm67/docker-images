@@ -3,6 +3,9 @@
 
 > A toolbox to run the Atlassian disk benchmark.
 
+[![](https://images.microbadger.com/badges/image/ludovicm67/atlassian-disk-bench.svg)](https://microbadger.com/images/ludovicm67/atlassian-disk-bench)
+[![](https://images.microbadger.com/badges/version/ludovicm67/atlassian-disk-bench.svg)](https://microbadger.com/images/ludovicm67/atlassian-disk-bench)
+
 Run the image:
   - Without volume: `docker run -it --rm ludovicm67/atlassian-disk-bench sh`
   - Using volume: `docker run -it --rm -v /tmp:/bench ludovicm67/atlassian-disk-bench sh`
