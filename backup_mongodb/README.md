@@ -7,6 +7,7 @@
 
   - `BACKUP_RETENTION_DAYS`: number of days backup will be kept (default: 7)
   - `BACKUP_RETENTION_HOURS`: number of days of hourly backups that need to be kept (disabled)
+  - `BACKUP_RETENTION_WEEKS`: number of days of hourly backups that need to be kept (disabled)
   - `BACKUP_RETENTION_MONTHS`: number of months backup will be kept (disabled)
   - `MONGO_URI`: mongo URI to connect to the database
 
@@ -14,4 +15,4 @@ By default only daily backup will be made and will be kept for 7 days. It's requ
 
 ## Volumes
 
-  - `/backup`: store the backups in a persistant volume
+  - `/backup`: store backups in a persistant volume

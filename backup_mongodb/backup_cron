@@ -1,3 +1,4 @@
 0 * * * * /usr/local/bin/backup_hourly > /proc/1/fd/1 2>/proc/1/fd/2
 0 0 * * * /usr/local/bin/backup_daily > /proc/1/fd/1 2>/proc/1/fd/2
-0 0 1 * * /usr/local/bin/backup_monthly > /proc/1/fd/1 2>/proc/1/fd/2
+0 0 * * 0 /usr/local/bin/backup_weekly > /proc/1/fd/1 2>/proc/1/fd/2c
+0 0 1 * * /usr/local/bin/backup_monthly > /proc/1/fd/1 2>/proc/1/fd/2c

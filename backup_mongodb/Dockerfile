@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:buster-slim
 VOLUME /backup
 WORKDIR /backup
 
@@ -20,10 +20,12 @@ RUN chmod +x /root/init_container
 COPY backup.sh /usr/local/bin/backup
 COPY backup_hourly.sh /usr/local/bin/backup_hourly
 COPY backup_daily.sh /usr/local/bin/backup_daily
+COPY backup_weekly.sh /usr/local/bin/backup_weekly
 COPY backup_monthly.sh /usr/local/bin/backup_monthly
 RUN chmod +x /usr/local/bin/backup \
   /usr/local/bin/backup_hourly \
   /usr/local/bin/backup_daily \
+  /usr/local/bin/backup_weekly \
   /usr/local/bin/backup_monthly
 
 # setup the backup cron job
