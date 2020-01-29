@@ -1,6 +1,7 @@
 FROM php:7.1-fpm-alpine
 
 WORKDIR /app
+EXPOSE 3000
 
 # install required dependencies to enable php extensions
 RUN apk add --no-cache \
@@ -29,3 +30,6 @@ RUN docker-php-ext-configure gd \
 
 # install composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+# run php local server
+CMD php -S 0.0.0.0:3000 -t /app
