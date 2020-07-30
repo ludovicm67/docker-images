@@ -1,10 +1,10 @@
-FROM alpine:3.10.3
+FROM alpine:3.12
 
 # configure versions
-ARG KUBECTL_VERSION=1.16.3
-ARG KUSTOMIZE_VERSION=3.4.0
-ARG KUBESCORE_VERSION=1.3.0
-ARG KUBEVAL_VERSION=0.14.0
+ARG KUBECTL_VERSION=1.18.6
+ARG KUSTOMIZE_VERSION=3.8.1
+ARG KUBESCORE_VERSION=1.7.3
+ARG KUBEVAL_VERSION=0.15.0
 
 # get all binaries
 ADD "https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl" /usr/local/bin/
