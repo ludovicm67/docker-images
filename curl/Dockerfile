@@ -1,3 +1,3 @@
-FROM alpine:3.10.3
+FROM alpine:3.12
 
 RUN apk add curl
